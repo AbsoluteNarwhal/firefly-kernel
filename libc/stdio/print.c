@@ -1,4 +1,6 @@
 #include "../include/stdio.h"
+#include <stdint.h>
+#include <stddef.h>
 
 int putchar(char c) {
     

@@ -1,4 +1,4 @@
-#include "vprint.h"
+#include "kprint.h"
 
 // Entry point for kernel once the assembly stuff is done
 void kernel_main() {

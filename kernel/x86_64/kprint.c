@@ -1,4 +1,4 @@
-#include "vprint.h"
+#include "kprint.h"
 
 // Video memory layout
 const static size_t NUM_COLS = 80;
@@ -46,9 +46,7 @@ void print_newline() {
 
 
 
-/*
-    Implementations
-*/
+
 
 void vm_putchar(char c) {
     if (c == '\n') {
@@ -65,16 +63,15 @@ void vm_putchar(char c) {
         color: color
     };
 
-    return;
-
     col++;
+    return;
 }
 
 void vm_puts(const char *s) {
     for (size_t i = 0; 1; i++) {
         char c = (uint8_t) s[i];
 
-        if (c = '\0') {
+        if (c == '\0') {
             return;
         }
 
@@ -89,5 +86,5 @@ void vm_clear_screen() {
 }
 
 void vm_set_output_color(uint8_t foreground, uint8_t background) {
-    uint8_t color = foreground + (background << 4);
+    color = foreground + (background << 4);
 }
