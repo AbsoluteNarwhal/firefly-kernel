@@ -1,4 +1,4 @@
-#include "kprint.h"
+#include "../include/kprint.h"
 
 // Video memory layout
 const static size_t NUM_COLS = 80;
